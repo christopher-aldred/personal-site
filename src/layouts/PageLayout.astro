@@ -1,10 +1,14 @@
+---
+import { Image } from "astro:assets";
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Decap Starter</title>
+		<title>Astro CMS Template</title>
 		<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 		<script defer>
 			if (window.netlifyIdentity) {
@@ -19,6 +23,41 @@
 		</script>
 	</head>
 	<body>
-		<slot />
+		<div
+			class="min-w-screen font-iaWriterMono min-h-screen bg-sky-200 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+		>
+			<center>
+				<header>
+					<div class="flex max-w-[600px] items-center px-4 pt-10 text-left">
+						<div class="-mt-8 flex-grow">
+							<h1 class="my-2 text-4xl">Chris's cms template</h1>
+							<h2 class="text-2xl text-neutral-500 dark:text-neutral-400">
+								A site template for you!
+							</h2>
+						</div>
+						<div class="flex-none">
+							<Image src="/image.png" alt="meme" width="200" height="200" />
+						</div>
+					</div>
+				</header>
+
+				<div class="-mt-8">
+					<svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M0 43.9999C106.667 43.9999 213.333 7.99994 320 7.99994C426.667 7.99994 533.333 43.9999 640 43.9999C746.667 43.9999 853.333 7.99994 960 7.99994C1066.67 7.99994 1173.33 43.9999 1280 43.9999C1386.67 43.9999 1440 19.0266 1440 9.01329V100H0V43.9999Z"
+							class="fill-current text-[#fff6f6]"></path>
+					</svg>
+				</div>
+
+				<nav class="space-x-6 bg-[#fff6f6]">
+					<a href="/#" class="font-iaWriterMonoBold underline hover:font-extrabold">home</a>
+					<a href="/#" class="hover:font-extrabold hover:underline">posts</a>
+					<a href="/#" class="hover:font-extrabold hover:underline">other</a>
+				</nav>
+				<div class="min-h-screen bg-[#fff6f6] pt-4">
+					<slot />
+				</div>
+			</center>
+		</div>
 	</body>
 </html>
