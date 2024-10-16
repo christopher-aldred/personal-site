@@ -26,7 +26,13 @@
 			<center>
 				<header>
 					<br />
-					<img src="/avatar.png" alt="avatar" width="200" height="200" class="mb-4 rounded-full" />
+					<img
+						src="/avatar.png"
+						alt="avatar"
+						width="200"
+						height="200"
+						class="mb-4 h-[200px] w-[200px] rounded-full object-cover"
+					/>
 					<div class="mb-4 flex max-w-[600px] items-center px-6 text-left">
 						<div class="flex-grow text-center">
 							<h1 class="text-3xl sm:text-4xl">Chris's cms template</h1>
@@ -38,7 +44,7 @@
 					<nav class="mt-6 w-fit space-x-6">
 						<a href="/#" class="font-iaWriterMonoBold underline">home</a>
 						<a href="/#">posts</a>
-						<a href="/#">other</a>
+						<a href="/#">setup</a>
 					</nav>
 					<div class="wave"></div>
 					<div class="wave2"></div>
@@ -46,7 +52,9 @@
 
 				<main class="-mt-1">
 					<div class="min-h-screen bg-[#fff6f6] px-4 pt-4 text-left">
-						<slot />
+						<div class="mx-auto max-w-[600px]">
+							<slot />
+						</div>
 					</div>
 				</main>
 			</center>
