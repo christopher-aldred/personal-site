@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fonts */
-@font-face {
-	font-family: "Eskool-Regular";
-	src: url(/fonts/Eskool-Regular.ttf) format("truetype");
+@layer base {
+	html {
+		@apply font-iaWriterMono;
+	}
+	a {
+		@apply hover:font-iaWriterMonoBold decoration-4 hover:underline;
+	}
 }
+
+/* Fonts */
 @font-face {
 	font-family: "iA Writer Mono";
 	src:
