@@ -30,8 +30,8 @@
 }
 
 .wave {
-	--mask: radial-gradient(89.44px at 50% 120px, #000 99%, #0000 101%) calc(50% - 80px) 0/160px 100%,
-		radial-gradient(89.44px at 50% -80px, #0000 99%, #000 101%) 50% 40px/160px 100% repeat-x;
+	--mask: radial-gradient(57.4px at 50% 80.5px, #000 99%, #0000 101%) calc(50% - 70px) 0/140px 100%,
+		radial-gradient(57.4px at 50% -45.5px, #0000 99%, #000 101%) 50% 35px/140px 100% repeat-x;
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
 	height: 60px;
@@ -40,8 +40,8 @@
 
 .wave2 {
 	margin-top: -58px;
-	--mask: radial-gradient(89.44px at 50% 120px, #000 99%, #0000 101%) calc(50% - 80px) 0/160px 100%,
-		radial-gradient(89.44px at 50% -80px, #0000 99%, #000 101%) 50% 40px/160px 100% repeat-x;
+	--mask: radial-gradient(57.4px at 50% 80.5px, #000 99%, #0000 101%) calc(50% - 70px) 0/140px 100%,
+		radial-gradient(57.4px at 50% -45.5px, #0000 99%, #000 101%) 50% 35px/140px 100% repeat-x;
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
 	height: 60px;
