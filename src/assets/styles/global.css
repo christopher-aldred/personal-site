@@ -23,3 +23,22 @@
 		url(/fonts/ia-writer-mono-latin-700-italic.woff2) format("woff2"),
 		url(/fonts/ia-writer-mono-latin-700-italic.woff) format("woff");
 }
+
+.wave {
+	--mask: radial-gradient(89.44px at 50% 120px, #000 99%, #0000 101%) calc(50% - 80px) 0/160px 100%,
+		radial-gradient(89.44px at 50% -80px, #0000 99%, #000 101%) 50% 40px/160px 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+	height: 60px;
+	background: #000;
+}
+
+.wave2 {
+	margin-top: -58px;
+	--mask: radial-gradient(89.44px at 50% 120px, #000 99%, #0000 101%) calc(50% - 80px) 0/160px 100%,
+		radial-gradient(89.44px at 50% -80px, #0000 99%, #000 101%) 50% 40px/160px 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+	height: 60px;
+	background: #fff6f6;
+}
