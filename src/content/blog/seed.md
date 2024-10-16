@@ -6,4 +6,6 @@ description: seed content
 ---
 ## Hello World
 
+![](src/assets/img/output-onlinepngtools-5.png)
+
 [Test](www.google.com)
