@@ -1,9 +1,9 @@
 ---
 title: seed
-date: 2023-12-01T03:21:44.941Z
-ogImage: /src/assets/img/speed.png
+date: 2024-10-16T23:43:00.000Z
+ogImage: src/assets/img/speed.png
 description: seed content
 ---
-Hello World
+## Hello World
 
-![](src/assets/img/favicon2.png)
+[Test](www.google.com)
