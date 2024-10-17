@@ -11,10 +11,10 @@ export async function getStaticPaths() {
 	}));
 }
 
-const { title, description, ogImage } = Astro.props.post.data;
+const { title, description } = Astro.props.post.data;
 const { Content } = await Astro.props.post.render();
 ---
 
-<PageLayout {title} {description} {ogImage}>
+<PageLayout {title} {description}>
 	<Content />
 </PageLayout>

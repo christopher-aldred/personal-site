@@ -1,3 +1,10 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+
+const pages = await Astro.glob("../content/page/*.md");
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -20,24 +27,14 @@
 				});
 			}
 		</script>
-
-		<!-- Add underline to current page link -->
-		<script>
-			var pageLinks = document.querySelectorAll("nav a");
-			pageLinks.forEach((pageLink) => {
-				if ((pageLink as HTMLAnchorElement).href === window.location.href) {
-					pageLink.className += "underline font-iaWriterMonoBold";
-				}
-			});
-		</script>
 	</head>
 	<body class="bg-[#fff6f6]">
 		<div
-			class="min-w-screen relative min-h-fit bg-sky-200 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+			class="min-w-screen relative bg-sky-200 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
 		>
 			<center>
+				<br />
 				<header>
-					<br />
 					<img
 						src="/avatar.webp"
 						alt="avatar"
@@ -53,16 +50,43 @@
 							</h2>
 						</div>
 					</div>
-					<nav class="mt-6 w-fit space-x-6 text-lg">
-						<a href="/">home</a>
-						<a href="/posts/">posts</a>
-					</nav>
-					<div class="wave"></div>
-					<div class="wave2"></div>
 				</header>
+				<nav
+					class="sticky top-4 z-50 my-6 flex w-fit flex-wrap justify-center space-x-6 rounded-full bg-[#fff6f6]/50 px-6 py-4 backdrop-blur-md dark:bg-neutral-800/50"
+				>
+					<a
+						class={`whitespace-nowrap ${
+							currentPath === "" ? "font-iaWriterMonoBold underline" : ""
+						}`}
+						href="/">home</a
+					>
+					<a
+						class={`whitespace-nowrap ${
+							currentPath === "posts" ? "font-iaWriterMonoBold underline" : ""
+						}`}
+						href="/posts">posts</a
+					>
+					{
+						pages.map(({ file }) => {
+							const urlWorkaround = file.split("/").pop()?.split(".")[0];
+							return (
+								<a
+									class={`whitespace-nowrap ${
+										currentPath.includes(urlWorkaround!) ? "font-iaWriterMonoBold underline" : ""
+									}`}
+									href={`/page/${file.split("/").pop()?.split(".")[0]}`}
+								>
+									{urlWorkaround}
+								</a>
+							);
+						})
+					}
+				</nav>
+				<div class="wave"></div>
+				<div class="wave2"></div>
 
 				<main class="-mt-1">
-					<div class="min-h-screen bg-[#fff6f6] px-4 pt-4 text-left text-lg">
+					<div class="bg-[#fff6f6] px-4 pt-4 text-left text-lg">
 						<div class="mx-auto max-w-[700px]">
 							<slot />
 						</div>
