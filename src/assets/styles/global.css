@@ -7,7 +7,7 @@
 		@apply font-iaWriterMono;
 	}
 	a {
-		@apply hover:font-iaWriterMonoBold decoration-4 hover:underline;
+		@apply decoration-4 hover:font-iaWriterMonoBold hover:underline;
 	}
 }
 
@@ -46,4 +46,23 @@
 	mask: var(--mask);
 	height: 60px;
 	background: #fff6f6;
+}
+
+#burst-8 {
+	background: red;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	text-align: center;
+	transform: rotate(20deg);
+}
+#burst-8:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100px;
+	background: red;
+	transform: rotate(135deg);
 }
