@@ -18,6 +18,14 @@
 				});
 			}
 		</script>
+
+		<!-- Add underline to current page link -->
+		<script>
+			var pageLinks = document.querySelectorAll(`a[href='${window.location.pathname}']`);
+			pageLinks.forEach((pageLink) => {
+				pageLink.className += "underline";
+			});
+		</script>
 	</head>
 	<body class="bg-[#fff6f6]">
 		<div
@@ -42,9 +50,8 @@
 						</div>
 					</div>
 					<nav class="mt-6 w-fit space-x-6 text-lg">
-						<a href="/#" class="font-iaWriterMonoBold underline">home</a>
+						<a href="/">home</a>
 						<a href="/posts">posts</a>
-						<a href="/#">setup</a>
 					</nav>
 					<div class="wave"></div>
 					<div class="wave2"></div>

@@ -10,12 +10,12 @@ const posts = (await Astro.glob("../content/post/*.md")).sort(
 ---
 
 <PageLayout>
-	<ul class="posts-list mt-2">
+	<ul class="posts-list">
 		{
 			posts.map(({ file, frontmatter: { title, description, date } }) => {
 				const urlWorkaround = file.split("/").pop()?.split(".")[0];
 				return (
-					<div class="mb-8">
+					<div class="mb-6">
 						<div class="flex items-start justify-between">
 							<a class="mr-4 text-2xl text-neutral-800 underline" href={`/post/${urlWorkaround}`}>
 								{title}
