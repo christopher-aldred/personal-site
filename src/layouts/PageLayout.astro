@@ -1,6 +1,6 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.split("/")[1];
+const currentPath = pathname.slice(1);
 
 const pages = await Astro.glob("../content/page/*.md");
 ---
