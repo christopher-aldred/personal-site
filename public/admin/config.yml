@@ -7,10 +7,11 @@ media_folder: src/assets/img
 public_folder: src/assets/img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/content/blog"
+  - name: "post"
+    label: "Post"
+    folder: "src/content/post"
     create: true
+    path: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
