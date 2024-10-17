@@ -21,7 +21,7 @@
 
 		<!-- Add underline to current page link -->
 		<script>
-			var pageLinks = document.querySelectorAll(`a[href='${window.location.pathname}']`);
+			var pageLinks = document.querySelectorAll(`a[href='${window.location.href}']`);
 			pageLinks.forEach((pageLink) => {
 				pageLink.className += "underline font-iaWriterMonoBold";
 			});
