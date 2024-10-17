@@ -1,5 +1,5 @@
 ---
-title: Second post :)
+title: Second post guys
 date: 2024-10-17T18:47:00.000Z
 description: The second post!
 tags:
