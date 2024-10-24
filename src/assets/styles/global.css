@@ -22,7 +22,7 @@
 		@apply text-xl;
 	}
 	p {
-		@apply mb-4 block break-after-column text-neutral-800 dark:text-neutral-200;
+		@apply mb-4 block break-after-column;
 	}
 	ul {
 		@apply mb-4 list-disc pl-5;
