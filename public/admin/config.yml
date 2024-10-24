@@ -7,9 +7,9 @@ media_folder: src/content/img
 public_folder: src/content/img
 
 collections:
-  - name: "post"
-    label: "Post"
-    folder: "src/content/post"
+  - name: "posts"
+    label: "Posts"
+    folder: "src/content/posts"
     create: true
     media_folder: ../img
     public_folder: ../img
@@ -20,9 +20,9 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
 
-  - name: "page"
-    label: "Page"
-    folder: "src/content/page"
+  - name: "pages"
+    label: "Pages"
+    folder: "src/content/pages"
     create: true
     media_folder: ../img
     public_folder: ../img

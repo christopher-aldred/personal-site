@@ -5,7 +5,7 @@ import type { GetStaticPathsOptions } from "node_modules/astro/dist/@types/astro
 import PostPreview from "@components/PostPreview.astro";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-	const allPosts = await Astro.glob("../../content/post/*.md");
+	const allPosts = await Astro.glob("../../content/posts/*.md");
 	const formattedPosts = allPosts
 		.sort((a, b) => new Date(a.frontmatter.date).getTime() - new Date(b.frontmatter.date).getTime())
 		.reverse();

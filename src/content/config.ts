@@ -20,6 +20,6 @@ const pageCollection = defineCollection({
 });
 
 export const collections = {
-	post: postCollection,
-	page: pageCollection,
+	posts: postCollection,
+	pages: pageCollection,
 };
