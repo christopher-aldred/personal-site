@@ -7,3 +7,5 @@ tags:
 ---
 
 lololol
+
+![](../img/blogging.jpg)

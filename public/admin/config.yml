@@ -3,16 +3,16 @@ backend:
   repo: username/reponame
   branch: main
 local_backend: true
-media_folder: src/assets/img
-public_folder: src/assets/img
+media_folder: src/content/img
+public_folder: src/content/img
 
 collections:
   - name: "post"
     label: "Post"
     folder: "src/content/post"
     create: true
-    media_folder: src/assets/img
-    public_folder: src/assets/img
+    media_folder: ../img
+    public_folder: ../img
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -24,8 +24,8 @@ collections:
     label: "Page"
     folder: "src/content/page"
     create: true
-    media_folder: src/assets/img
-    public_folder: src/assets/img
+    media_folder: ../img
+    public_folder: ../img
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
