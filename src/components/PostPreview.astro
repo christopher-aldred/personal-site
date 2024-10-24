@@ -1,0 +1,16 @@
+---
+// Usage: <PostPreview url="first-post" title="First post" description="The first post!" date="2024-10-16T18:28:00.000Z" />
+const { url, title, description, date } = Astro.props;
+---
+
+<div class="mb-6">
+	<div class="flex items-start justify-between">
+		<a class="mr-4 text-2xl text-neutral-800 underline" href={`/post/${url}`}>
+			{title}
+		</a>
+		<div class="whitespace-nowrap pt-[4px] text-lg text-neutral-500">
+			{new Date(date).toLocaleDateString()}
+		</div>
+	</div>
+	<p class="text-lg">{description}</p>
+</div>

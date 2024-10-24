@@ -1,4 +1,6 @@
 ---
+import NavBar from "@components/NavBar.astro";
+
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
 
@@ -51,37 +53,9 @@ const pages = await Astro.glob("../content/page/*.md");
 						</div>
 					</div>
 				</header>
-				<nav
-					class="sticky top-2 z-50 mx-2 mt-6 flex w-fit flex-wrap justify-center gap-x-4 rounded-full border-2 border-neutral-900 bg-[#fff6f6]/50 px-8 py-4 backdrop-blur-md dark:bg-neutral-800/50"
-				>
-					<a
-						class={`whitespace-nowrap ${
-							currentPath === "" ? "font-iaWriterMonoBold underline" : ""
-						}`}
-						href="/">home</a
-					>
-					<a
-						class={`whitespace-nowrap ${
-							currentPath.includes("post") ? "font-iaWriterMonoBold underline" : ""
-						}`}
-						href="/posts">posts</a
-					>
-					{
-						pages.map(({ file }) => {
-							const urlWorkaround = file.split("/").pop()?.split(".")[0];
-							return (
-								<a
-									class={`whitespace-nowrap ${
-										currentPath.includes(urlWorkaround!) ? "font-iaWriterMonoBold underline" : ""
-									}`}
-									href={`/page/${file.split("/").pop()?.split(".")[0]}`}
-								>
-									{urlWorkaround}
-								</a>
-							);
-						})
-					}
-				</nav>
+
+				<NavBar currentPath={currentPath} pages={pages} />
+
 				<div class="wave"></div>
 				<div class="wave2"></div>
 

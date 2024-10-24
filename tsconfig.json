@@ -11,6 +11,7 @@
 			"@utils/*": ["src/assets/utils/*"]
 		},
 		"incremental": true,
-		"skipLibCheck": true
+		"skipLibCheck": true,
+		"noImplicitAny": false
 	}
 }
