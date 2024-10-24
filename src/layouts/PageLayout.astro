@@ -3,6 +3,12 @@ import NavBar from "@components/NavBar.astro";
 const pages = await Astro.glob("../content/page/*.md");
 ---
 
+<script>
+	if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+		document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#0c4a6e");
+	}
+</script>;
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -54,7 +60,7 @@ const pages = await Astro.glob("../content/page/*.md");
 
 				<NavBar pages={pages} />
 
-				<div class="wave"></div>
+				<div class="wave bg-neutral-900"></div>
 				<div class="wave2 bg-[#fff6f6] dark:bg-neutral-900"></div>
 
 				<main class="-mt-1">

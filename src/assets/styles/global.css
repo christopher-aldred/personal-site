@@ -56,7 +56,6 @@
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
 	height: 60px;
-	background: #000;
 }
 
 .wave2 {
