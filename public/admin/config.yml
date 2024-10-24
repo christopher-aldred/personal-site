@@ -3,8 +3,8 @@ backend:
   repo: username/reponame
   branch: main
 local_backend: true
-media_folder: src/content/img
-public_folder: src/content/img
+media_folder: src/content/images
+public_folder: src/content/images
 
 collections:
   - name: "posts"

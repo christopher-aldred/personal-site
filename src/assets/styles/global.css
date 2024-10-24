@@ -6,6 +6,12 @@
 	html {
 		@apply block font-iaWriterMono;
 	}
+	strong {
+		@apply font-iaWriterMonoBold;
+	}
+	b {
+		@apply font-iaWriterMonoBold;
+	}
 	nav a {
 		@apply decoration-4 hover:font-iaWriterMonoBold hover:underline;
 	}

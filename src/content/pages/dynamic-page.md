@@ -4,28 +4,33 @@ title: dynamic page
 
 # H1
 
-Hia
+There should only ever be one H1 on any page.
 
 ## H2
 
-Lets see!
+A sub header to the H1 header.
 
 ### H3
 
-How this goes
+A sub header to any H2 headers.
 
 #### H4
 
-Shall we
+A sub header to any H3 headers.
 
-- Bullet points
-- Can be handy
+## Un-ordered list
 
-Buuuuut
+- Uses bullet points
+- Can be very handy
 
-1. So
-2. can
+## Ordered list
+
+1. Allows
+2. for
 3. numbered
-4. lists
+4. entries
+
+<center><h3>HTML tags are also <i>supported</i> in markdown</h3></center>
+<br/>
 
 ![](../images/329144.jpeg)
