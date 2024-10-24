@@ -1,7 +1,6 @@
 ---
 title: dynamic page
 ---
-
 # H1
 
 Hia
@@ -18,8 +17,8 @@ How this goes
 
 Shall we
 
-- Bullet points
-- Can be handy
+* Bullet points
+* Can be handy
 
 Buuuuut
 
@@ -27,3 +26,5 @@ Buuuuut
 2. can
 3. numbered
 4. lists
+
+![test](329144.jpeg)
