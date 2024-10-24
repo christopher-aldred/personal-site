@@ -12,6 +12,9 @@
 	main a {
 		@apply text-blue-600 decoration-4 hover:font-iaWriterMonoBold hover:underline dark:text-blue-400;
 	}
+	main img {
+		@apply rounded-xl;
+	}
 	h1 {
 		@apply text-3xl;
 	}
