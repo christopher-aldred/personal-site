@@ -2,8 +2,8 @@ import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
 
 const config: Config = {
+	darkMode: "media",
 	content: ["./src/**/*.{astro,js,ts,tsx,md,mdx}"],
-	darkMode: "class",
 	plugins: [typography],
 	theme: {
 		extend: {

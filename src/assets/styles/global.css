@@ -4,10 +4,31 @@
 
 @layer base {
 	html {
-		@apply font-iaWriterMono;
+		@apply block font-iaWriterMono;
 	}
-	a {
+	nav a {
 		@apply decoration-4 hover:font-iaWriterMonoBold hover:underline;
+	}
+	main a {
+		@apply text-blue-600 decoration-4 hover:font-iaWriterMonoBold hover:underline dark:text-blue-400;
+	}
+	h1 {
+		@apply text-3xl;
+	}
+	h2 {
+		@apply text-2xl;
+	}
+	h3 {
+		@apply text-xl;
+	}
+	p {
+		@apply mb-4 block break-after-column text-neutral-800 dark:text-neutral-200;
+	}
+	ul {
+		@apply mb-4 list-disc pl-5;
+	}
+	ol {
+		@apply mb-4 list-inside list-decimal;
 	}
 }
 
@@ -45,7 +66,6 @@
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
 	height: 60px;
-	background: #fff6f6;
 }
 
 #burst-8 {
