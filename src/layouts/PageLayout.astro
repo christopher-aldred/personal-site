@@ -3,10 +3,17 @@ import NavBar from "@components/NavBar.astro";
 const pages = await Astro.glob("../content/page/*.md");
 ---
 
+<!-- Workaround for IOS status bar color dark mode -->
 <script>
 	if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-		document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#0c4a6e");
+		document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#0C4A6E");
 	}
+	window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+		const newColorScheme = event.matches ? "dark" : "light";
+		document
+			.querySelector('meta[name="theme-color"]')
+			?.setAttribute("content", newColorScheme === "dark" ? "#0C4A6E" : "#BAE6FD");
+	});
 </script>
 
 <html lang="en">
