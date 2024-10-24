@@ -1,9 +1,6 @@
 ---
 import NavBar from "@components/NavBar.astro";
 
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1);
-
 const pages = await Astro.glob("../content/page/*.md");
 ---
 
@@ -54,7 +51,7 @@ const pages = await Astro.glob("../content/page/*.md");
 					</div>
 				</header>
 
-				<NavBar currentPath={currentPath} pages={pages} />
+				<NavBar pages={pages} />
 
 				<div class="wave"></div>
 				<div class="wave2"></div>
