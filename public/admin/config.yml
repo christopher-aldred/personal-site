@@ -11,8 +11,8 @@ collections:
     label: "Posts"
     folder: "src/content/posts"
     create: true
-    media_folder: ../img
-    public_folder: ../img
+    media_folder: ../images
+    public_folder: ../images
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -24,8 +24,8 @@ collections:
     label: "Pages"
     folder: "src/content/pages"
     create: true
-    media_folder: ../img
-    public_folder: ../img
+    media_folder: ../images
+    public_folder: ../images
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }

@@ -28,4 +28,4 @@ Buuuuut
 3. numbered
 4. lists
 
-![](../img/329144.jpeg)
+![](../images/329144.jpeg)

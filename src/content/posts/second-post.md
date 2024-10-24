@@ -8,4 +8,4 @@ tags:
 
 lololol
 
-![](../img/blogging.jpg)
+![](../images/blogging.jpg)
