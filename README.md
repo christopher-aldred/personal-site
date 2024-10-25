@@ -2,7 +2,6 @@
 
 A basic CMS site with a minimal theme requiring no coding knowledge. All pages and posts are created via the admin UI and written in markdown.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/christopher-aldred/astro-decap-cms-site)
 
 ![screenshot](src/content/images/cms.png)
 
@@ -24,9 +23,10 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 
 ## Getting Started
 
-1. Fork this repo
-2. Deploy site to Netlify
-3. Set up Netlify Identity
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/christopher-aldred/astro-decap-cms-site)
+
+1. Click the button above ^
+2. Set up Netlify Identity
 
 - `Site configuration --> Identity --> Enable Identity --> Enable Git Gateway ( In Services Section of Identity )`
   - You can allow Registration or Invite Only
