@@ -1,5 +1,7 @@
 # Astro & Decap CMS Template
 
+A basic CMS site with a minimal theme requiring no coding knowledge. All pages and posts are created via the admin UI and written in markdown.
+
 ![screenshot](src/content/images/cms.png)
 
 ## Features
