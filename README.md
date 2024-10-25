@@ -35,7 +35,6 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 - SSG on Netlify
 - Decap CMS pushes changes to github
 - Requires Netlify Identity (Can be manually replaced with other Oauth services)
-- Local Backend works
 
   - Preview styles and templates won't be applied in dev server, but the cms will work
   - For actual use / local testing it's best to `pnpm run build && pnpm run preview`
