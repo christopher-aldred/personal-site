@@ -15,7 +15,7 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 
 ## Getting Started
 
-1. Clone this repo
+1. Fork this repo
 2. Deploy site to Netlify
 3. Set up Netlify Identity
 
