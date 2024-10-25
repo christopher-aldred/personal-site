@@ -9,4 +9,5 @@ var CustomPreview = createClass({
 });
 
 // Register the custom preview template for a specific collection
-CMS.registerPreviewTemplate("blog", CustomPreview);
+CMS.registerPreviewTemplate("posts", CustomPreview);
+CMS.registerPreviewTemplate("pages", CustomPreview);
