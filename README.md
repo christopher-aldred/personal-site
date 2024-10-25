@@ -1,7 +1,5 @@
 # Astro & Decap CMS Template
 
-A site template for you!
-
 ![screenshot](src/content/images/cms.png)
 
 ## Features
