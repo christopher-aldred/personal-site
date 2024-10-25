@@ -41,8 +41,8 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 
 ## How it works
 
-- SSG on Netlify
-- Decap CMS pushes changes to github
+- Static site generation on Netlify
+- Decap CMS pushes changes to github which are redeployed in under a minute
 - Requires Netlify Identity (Can be manually replaced with other Oauth services)
 
   - Preview styles and templates won't be applied in dev server, but the cms will work
@@ -52,7 +52,6 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 - Netlify Identity widget must be on root page ( is in `src/layouts/PageLayout.astro` but only needs to be on root page ) and `/admin`
 - The decap admin board is preconfigured with preview styles built from the tailwind of our project and to only show the body in the preview ( personal preference of mine can be removed by removing the scripts in `/pages/admin.astro`)
 - Tailwind typography for styling the blogs
-  - Personally not a fan but I figured it was easy to use and remove
 
 ## Decap with oAuth Routes in Astro
 
