@@ -5,13 +5,20 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 ![screenshot](src/content/images/cms.png)
 
 ## Features
+- Create posts & pages via Admin UI
+- Write content in markdown (also supports html)
+- Light & dark theme
+- Posts pagination
+- View posts by tag (Coming soon)
+- Search posts (Coming soon)
+
+## Tech stack
 
 - [Astro](https://astro.build/) - Static Site Generator
 - [Netlify](https://www.netlify.com/) - Hosting
 - [Netlify Identity](https://www.netlify.com/products/identity/) - Authentication
 - [Decap CMS](https://decapcms.org/) - CMS
 - [TailwindCSS](https://tailwindcss.com/) - Styling
-- [Netlify Identity Widget](https://docs.netlify.com/visitor-access/identity/#identity-widget) - Authentication
 
 ## Getting Started
 
@@ -26,9 +33,8 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 ## How it works
 
 - SSG on Netlify
-- Git Gateway backend of Decap
-- Requires Netlify Identity
-- Local Backend works
+- Decap CMS pushes changes to github
+- Requires Netlify Identity (Can be manually replaced with other Oauth services)
 
   - Preview styles and templates won't be applied in dev server, but the cms will work
   - For actual use / local testing it's best to `pnpm run build && pnpm run preview`
