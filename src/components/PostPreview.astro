@@ -1,6 +1,9 @@
 ---
+import { map } from "astro/zod";
+import Tags from "@components/Tags.astro";
+
 // Usage: <PostPreview url="first-post" title="First post" description="The first post!" date="2024-10-16T18:28:00.000Z" />
-const { url, title, description, date } = Astro.props;
+const { url, title, description, date, tags } = Astro.props;
 ---
 
 <div class="mb-6">
@@ -13,4 +16,7 @@ const { url, title, description, date } = Astro.props;
 		</div>
 	</div>
 	<p class="text-lg">{description}</p>
+	<div class="-mt-4">
+		<Tags tags={tags} />
+	</div>
 </div>

@@ -21,10 +21,16 @@ const { page } = Astro.props;
 <PageLayout>
 	<ul class="posts-list pl-0">
 		{
-			page.data.map(({ file, frontmatter: { title, description, date } }) => {
+			page.data.map(({ file, frontmatter: { title, description, date, tags } }) => {
 				const urlWorkaround = file.split("/").pop()?.split(".")[0];
 				return (
-					<PostPreview url={urlWorkaround} title={title} description={description} date={date} />
+					<PostPreview
+						url={urlWorkaround}
+						title={title}
+						description={description}
+						date={date}
+						tags={tags}
+					/>
 				);
 			})
 		}
