@@ -1,8 +1,24 @@
-# Decap Starter
+# Astro & Decap CMS Template
 
-1. Set up Netlify Identity
+A site template for you!
 
-- Deploy site
+![screenshot](src/content/images/cms.png)
+
+## Features
+
+- [Astro](https://astro.build/) - Static Site Generator
+- [Netlify](https://www.netlify.com/) - Hosting
+- [Netlify Identity](https://www.netlify.com/products/identity/) - Authentication
+- [Decap CMS](https://decapcms.org/) - CMS
+- [TailwindCSS](https://tailwindcss.com/) - Styling
+- [Netlify Identity Widget](https://docs.netlify.com/visitor-access/identity/#identity-widget) - Authentication
+
+## Getting Started
+
+1. Clone this repo
+2. Deploy site to Netlify
+3. Set up Netlify Identity
+
 - `Site configuration --> Identity --> Enable Identity --> Enable Git Gateway ( In Services Section of Identity )`
   - You can allow Registration or Invite Only
   - For Invite Only: `Integrations --> Identity --> Invite Users --> Send invite email`
@@ -13,6 +29,7 @@
 - Git Gateway backend of Decap
 - Requires Netlify Identity
 - Local Backend works
+
   - Preview styles and templates won't be applied in dev server, but the cms will work
   - For actual use / local testing it's best to `pnpm run build && pnpm run preview`
   - If you are using windows you will need to edit the [package.json](./package.json)'s `dev` and `preview` commands to `"dev": "start decap-server & start astro dev"` and `"preview: "start decap-server & start astro preview"`
