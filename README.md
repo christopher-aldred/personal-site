@@ -27,7 +27,8 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
   - `Site configuration --> Identity --> Users --> Invite user`
   - You will need to verify email and set a password
     
-### 4 - Navigate back to your site root and add /admin to the end of the url
+### 4 - Navigate to your sites admin page
+  - `www.your-site.com/admin`
    
 ### 5 - Login with the newly created admin account
  
