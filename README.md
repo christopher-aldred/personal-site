@@ -13,14 +13,6 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 - View posts by tag (Coming soon)
 - Search posts (Coming soon)
 
-## Tech stack
-
-- [Astro](https://astro.build/) - Static Site Generator
-- [Netlify](https://www.netlify.com/) - Hosting
-- [Netlify Identity](https://www.netlify.com/products/identity/) - Authentication
-- [Decap CMS](https://decapcms.org/) - CMS
-- [TailwindCSS](https://tailwindcss.com/) - Styling
-
 ## Getting Started
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/christopher-aldred/astro-decap-cms-site)
@@ -31,6 +23,14 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 - `Site configuration --> Identity --> Enable Identity --> Enable Git Gateway ( In Services Section of Identity )`
   - You can allow Registration or Invite Only
   - For Invite Only: `Integrations --> Identity --> Invite Users --> Send invite email`
+ 
+## Tech stack
+
+- [Astro](https://astro.build/) - Static Site Generator
+- [Netlify](https://www.netlify.com/) - Hosting
+- [Netlify Identity](https://www.netlify.com/products/identity/) - Authentication
+- [Decap CMS](https://decapcms.org/) - CMS
+- [TailwindCSS](https://tailwindcss.com/) - Styling
 
 ## How it works
 
