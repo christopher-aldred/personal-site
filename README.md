@@ -1,17 +1,16 @@
-# Astro & Decap CMS Site
+# Astro & Decap CMS Site 🚀
 
 A basic CMS site with a minimal theme requiring no coding knowledge. All pages and posts are created via the admin UI and written in markdown.
-
 
 ![screenshot](src/content/images/cms.png)
 
 ## Features
-- Create posts & pages via Admin UI
-- Write content in markdown (also supports html)
-- Light & dark theme
-- Posts pagination
-- View posts by tag (Coming soon)
-- Search posts (Coming soon)
+- 🚀 Create posts & pages via Admin UI
+- 🗒️ Write content in markdown (also supports html)
+- 🌓 Light & dark theme
+- 💯 Posts pagination
+- 🔖 View posts by tag (Coming soon)
+- 🔎 Search posts (Coming soon)
 
 ## Getting Started
 
