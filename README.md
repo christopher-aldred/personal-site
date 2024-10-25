@@ -2,6 +2,8 @@
 
 A basic CMS site with a minimal theme requiring no coding knowledge. All pages and posts are created via the admin UI and written in markdown.
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/christopher-aldred/astro-decap-cms-site)
+
 ![screenshot](src/content/images/cms.png)
 
 ## Features
