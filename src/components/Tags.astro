@@ -6,7 +6,7 @@ const { tags } = Astro.props;
 	tags.map((tag) => {
 		tag = `#${tag.toLowerCase()}`;
 		return (
-			<a href={`/tags/${tag}`} class="mr-2 text-sm text-neutral-500  dark:text-neutral-200">
+			<a href={`/tags/${tag}`} class="mr-2 text-sm text-neutral-500 dark:text-neutral-400">
 				{tag}
 			</a>
 		);

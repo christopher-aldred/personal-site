@@ -18,10 +18,12 @@ const { Content } = await Astro.props.post.render();
 
 <PageLayout>
 	<h2>{title}</h2>
-	<p class="mt-1 text-sm text-neutral-500">Published on {new Date(date).toLocaleDateString()}</p>
+	<p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+		Published on {new Date(date).toLocaleDateString()}
+	</p>
 	<div class="-mt-4">
 		<Tags tags={tags} />
 	</div>
-	<hr class="my-4 border border-neutral-200 dark:border-neutral-800" />
+	<hr class="my-4 border border-neutral-300 dark:border-neutral-700" />
 	<Content />
 </PageLayout>
