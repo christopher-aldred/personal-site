@@ -15,14 +15,20 @@ A basic CMS site with a minimal theme requiring no coding knowledge. All pages a
 
 ## Getting Started
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/christopher-aldred/astro-decap-cms-site)
+1. [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/christopher-aldred/astro-decap-cms-site)
 
-1. Click the button above ^
 2. Set up Netlify Identity
-
-- `Site configuration --> Identity --> Enable Identity --> Enable Git Gateway ( In Services Section of Identity )`
+  - `Site configuration --> Identity --> Enable Identity --> Enable Git Gateway ( In Services Section of Identity )`
   - You can allow Registration or Invite Only
   - For Invite Only: `Integrations --> Identity --> Invite Users --> Send invite email`
+
+3. Add an admin user
+  - `Site configuration --> Identity --> Users --> Invite user`
+  - You will need to verify email and set a password
+    
+4. Navigate back to your site root and add /admin to the end of the url
+   
+5. Login with the newly created admin account
  
 ## Tech stack
 
