@@ -5,6 +5,7 @@ description: The second post!
 tags:
   - news
   - astro
+  - blog
 ---
 
 lololol
