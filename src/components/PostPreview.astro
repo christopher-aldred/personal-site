@@ -10,7 +10,7 @@ const { url, title, description, date, tags } = Astro.props;
 			{title}
 		</a>
 		<div class="whitespace-nowrap pt-[7px] text-neutral-500">
-			{new Date(date).toLocaleDateString()}
+			{new Date(date).toLocaleDateString("en-GB")}
 		</div>
 	</div>
 	<p class="mb-4 text-lg">{description}</p>
