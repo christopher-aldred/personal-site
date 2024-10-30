@@ -39,6 +39,9 @@
 	ol {
 		@apply mb-8 list-inside list-decimal;
 	}
+	.techStackEntry {
+		@apply flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10;
+	}
 }
 
 /* Fonts */

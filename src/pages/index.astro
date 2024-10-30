@@ -22,11 +22,9 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 		</div>
 	</div>
 
-	<h2 class="mt-8">Technologies and Tools</h2>
+	<h2 class="mt-12">Technologies and Tools</h2>
 	<div class="mt-2 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
-		<div
-			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10"
-		>
+		<div class="techStackEntry col-start-1">
 			<span>Typescript</span>
 			<svg
 				width="30"
@@ -49,9 +47,7 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 				</defs>
 			</svg>
 		</div>
-		<div
-			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10"
-		>
+		<div class="techStackEntry col-start-2">
 			<span>Javascript</span>
 			<svg
 				width="30"
@@ -74,9 +70,7 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 				</defs>
 			</svg>
 		</div>
-		<div
-			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10 sm:col-start-3"
-		>
+		<div class="techStackEntry col-start-1 sm:col-start-3">
 			<span>React</span>
 			<svg
 				width="30"
@@ -108,9 +102,7 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 				</g>
 			</svg>
 		</div>
-		<div
-			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10 sm:col-start-4"
-		>
+		<div class="techStackEntry col-start-2 sm:col-start-4">
 			<span>NodeJS</span>
 			<svg
 				width="30"
@@ -134,9 +126,7 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 	</div>
 
 	<div class="mt-4 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
-		<div
-			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10"
-		>
+		<div class="techStackEntry col-start-1">
 			<span>Java</span>
 			<svg
 				width="30"
@@ -174,9 +164,7 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 				</defs>
 			</svg>
 		</div>
-		<div
-			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10"
-		>
+		<div class="techStackEntry col-start-2">
 			<span>Spring Boot</span>
 			<svg
 				width="30"
@@ -202,9 +190,7 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 				</defs>
 			</svg>
 		</div>
-		<div
-			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10 sm:col-start-3"
-		>
+		<div class="techStackEntry col-start-1 sm:col-start-3">
 			<span>Python</span>
 			<svg
 				width="30"
@@ -252,9 +238,7 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 				</defs>
 			</svg>
 		</div>
-		<div
-			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10 sm:col-start-4"
-		>
+		<div class="techStackEntry col-start-2 sm:col-start-4">
 			<span>PL/SQL</span>
 			<svg
 				width="30"
@@ -273,12 +257,26 @@ import PortfolioEntry from "@components/PortfolioEntry.astro";
 		</div>
 	</div>
 
-	<h2 class="mt-8">Portfolio & Projects</h2>
+	<h2 class="mt-12">Portfolio & Projects</h2>
 	<PortfolioEntry
 		url="http://atherton-arboriculture.co.uk"
 		imagePath="/images/atherton.png"
 		title="Atherton arboriculture"
 		description="A small arboriculture business based around Leyland, Preston and Lancashire."
 		tags={["HTML", "CSS"]}
+	/>
+	<PortfolioEntry
+		url="https://leaderboard.aldred.dev"
+		imagePath="/images/leaderboard.png"
+		title="Leaderboard.aldred.dev"
+		description="A leaderboard web app utilising google firebase for realtime data storage and updates."
+		tags={["Tyepscript", "React", "Firebase"]}
+	/>
+	<PortfolioEntry
+		url="https://astro-decap-jamstack-blog.netlify.app/"
+		imagePath="/images/blog-template.png"
+		title="Astro Decap Blog"
+		description="A blog template built using Jamstack techologies which can be easily hosted on Netlify."
+		tags={["Astro", "Tailwind", "CMS"]}
 	/>
 </PageLayout>
