@@ -4,7 +4,7 @@ import Tags from "@components/Tags.astro";
 const { url, title, description, date, tags } = Astro.props;
 ---
 
-<div class="mb-6">
+<div class="mb-8">
 	<div class="flex items-start justify-between">
 		<a class="text-2xl text-neutral-800 underline dark:text-neutral-200" href={`/post/${url}`}>
 			{title}
@@ -13,7 +13,7 @@ const { url, title, description, date, tags } = Astro.props;
 			{new Date(date).toLocaleDateString()}
 		</div>
 	</div>
-	<p class="text-lg">{description}</p>
+	<p class="mb-4 text-lg">{description}</p>
 	<div class="-mt-5">
 		<Tags tags={tags} />
 	</div>

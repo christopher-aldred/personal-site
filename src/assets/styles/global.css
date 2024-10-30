@@ -31,13 +31,13 @@
 		@apply text-xl;
 	}
 	p {
-		@apply mb-4 block break-after-column;
+		@apply mb-8 block break-after-column;
 	}
 	ul {
-		@apply mb-4 list-disc pl-5;
+		@apply mb-8 list-disc pl-5;
 	}
 	ol {
-		@apply mb-4 list-inside list-decimal;
+		@apply mb-8 list-inside list-decimal;
 	}
 }
 
