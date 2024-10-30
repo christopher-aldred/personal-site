@@ -1,6 +1,7 @@
 ---
 import "@assets/styles/global.css";
 import PageLayout from "@layouts/PageLayout.astro";
+import PortfolioEntry from "@components/PortfolioEntry.astro";
 ---
 
 <PageLayout>
@@ -14,18 +15,17 @@ import PageLayout from "@layouts/PageLayout.astro";
 		<div class="col-start-1 flex items-center justify-center">
 			<img alt="A hammer" src="images/working.webp" height="300" width="300" />
 		</div>
-		<div class="col-start-1 rounded-lg bg-neutral-500/10 p-4 sm:col-start-2">
-			I will always choose the best tools for the job, regardless of what preferences I have. I am a
-			strong believer that you need the right tool for the job, and that you should not be afraid to
-			experiment. I ensure that every client receives a site that is both stunning and practical.
+		<div class="col-start-1sm:col-start-2">
+			I prioritize selecting the best tools for each project, valuing functionality over personal
+			preference. I believe in using the right tool for the job and encourage experimentation to
+			ensure each client receives a site that is both stunning and practical.
 		</div>
 	</div>
-	<br />
-	<h2>Technologies and Tools</h2>
 
+	<h2 class="mt-8">Technologies and Tools</h2>
 	<div class="mt-2 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
 		<div
-			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 hover:bg-neutral-500/20 hover:font-iaWriterMonoBold"
+			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10"
 		>
 			<span>Typescript</span>
 			<svg
@@ -50,7 +50,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 			</svg>
 		</div>
 		<div
-			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 hover:bg-neutral-500/20 hover:font-iaWriterMonoBold"
+			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10"
 		>
 			<span>Javascript</span>
 			<svg
@@ -75,7 +75,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 			</svg>
 		</div>
 		<div
-			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 hover:bg-neutral-500/20 hover:font-iaWriterMonoBold sm:col-start-3"
+			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10 sm:col-start-3"
 		>
 			<span>React</span>
 			<svg
@@ -109,9 +109,9 @@ import PageLayout from "@layouts/PageLayout.astro";
 			</svg>
 		</div>
 		<div
-			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 hover:bg-neutral-500/20 hover:font-iaWriterMonoBold sm:col-start-4"
+			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10 sm:col-start-4"
 		>
-			<span>Astro</span>
+			<span>NodeJS</span>
 			<svg
 				width="30"
 				height="30"
@@ -119,15 +119,15 @@ import PageLayout from "@layouts/PageLayout.astro";
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<g id="astro">
+				<g id="nodejs">
 					<path
 						id="Vector"
-						d="M35.7 85.2001C31.2 81.1001 29.9 72.4001 31.8 66.1001C35.1 70.1001 39.6 71.3001 44.2 72.0001C51.4 73.1001 58.5 72.7001 65.2 69.4001C66 69.0001 66.7 68.5001 67.5 68.0001C68.1 69.8001 68.3 71.7001 68.1 73.6001C67.6 78.2001 65.3 81.7001 61.7 84.4001C60.3 85.5001 58.7 86.4001 57.2 87.4001C52.6 90.5001 51.4 94.1001 53.1 99.4001C53.1 99.5001 53.2 99.7001 53.3 100C51 98.9001 49.3 97.4001 48 95.4001C46.6 93.3001 46 90.9001 45.9 88.4001C45.9 87.2001 45.9 85.9001 45.7 84.7001C45.3 81.7001 43.9 80.4001 41.3 80.3001C38.6 80.2001 36.5 81.9001 35.9 84.5001C35.8 84.7001 35.8 84.9001 35.7 85.2001Z"
-						fill="#838383"></path>
+						d="M46.3 1.10005C48.8 -0.299951 52 -0.299951 54.5 1.10005C67 8.10005 79.4 15.2001 91.9 22.2001C94.2 23.5001 95.8 26.1 95.8 28.8V71.2C95.8 74 94.1 76.7 91.6 78C79.2 85 66.8 92 54.3 99C51.8 100.4 48.5 100.3 46 98.8C42.3 96.6 38.5 94.5 34.8 92.3C34 91.8 33.2 91.5 32.6 90.7C33.1 90.1 33.9 90 34.6 89.7C36.2 89.2 37.6 88.4 39 87.6C39.4 87.4 39.8 87.4 40.1 87.7C43.3 89.5 46.4 91.4 49.6 93.2C50.3 93.6 51 93.1 51.6 92.7C64 85.9 76.2 79.1 88.3 72.2C88.8 72 89 71.5 89 71C89 57 89 43 89 29.1C89.1 28.5 88.7 28 88.2 27.8C75.8 20.8 63.4 13.8 51.1 6.90005C50.9 6.80005 50.6 6.70005 50.4 6.70005C50.1 6.70005 49.9 6.80005 49.7 6.90005C37.3 13.9 25 20.9 12.6 27.8C12 28 11.7 28.5 11.7 29C11.7 43 11.7 57 11.7 70.9C11.7 71.1 11.7 71.4 11.9 71.6C12 71.8 12.2 72 12.4 72.1C15.7 74 19 75.8 22.3 77.7C24.2 78.7 26.4 79.3 28.5 78.5C30.3 77.9 31.6 76 31.5 74.1C31.5 60.2 31.5 46.3001 31.5 32.4001C31.5 31.8001 32 31.3 32.6 31.3C34.2 31.3 35.8 31.3 37.4 31.3C38.1 31.3 38.5 31.9 38.4 32.6C38.4 46.6 38.4 60.6 38.4 74.6C38.4 78.3 36.9 82.4 33.4 84.2C29.2 86.4 23.9 85.9 19.7 83.8C16.1 82 12.6 79.8 9 77.9C6.7 76.7 5 74 5 71.2V28.8C5 26 6.6 23.4 9 22.1C21.4 15.1 33.9 8.10005 46.3 1.10005Z"
+						fill="#A8A8A8"></path>
 					<path
 						id="Vector_2"
-						d="M10 65C10 65 23.3 58.5 36.7 58.5L46.8 27.2C47.2 25.7 48.3 24.7 49.5 24.7C50.7 24.7 51.8 25.7 52.2 27.2L62.3 58.5C78.1 58.5 89 65 89 65C89 65 66.4 3.1 66.3 3C65.7 1.2 64.6 0 63.1 0H35.9C34.4 0 33.4 1.2 32.7 3C32.6 3.1 10 65 10 65Z"
-						fill="#020202"></path>
+						d="M57.1001 30.4C62.5001 30.1 68.3001 30.2 73.2001 32.9C77.0001 34.9 79.1001 39.2 79.1001 43.4C79.0001 44 78.4001 44.3 77.9001 44.2C76.3001 44.2 74.8001 44.2 73.2001 44.2C72.5001 44.2 72.1001 43.6 72.1001 43C71.6001 41 70.6001 39 68.7001 38C65.8001 36.5 62.4001 36.6 59.3001 36.7C57.0001 36.8 54.5001 37 52.6001 38.4C51.1001 39.4 50.6001 41.5 51.2001 43.2C51.7001 44.4 53.1001 44.8 54.2001 45.1C60.7001 46.8 67.6001 46.6 74.0001 48.9C76.7001 49.8 79.2001 51.6 80.2001 54.4C81.4001 58.1 80.9001 62.6 78.2001 65.6C76.1001 68.1 72.9001 69.4 69.8001 70.1C65.5001 71 61.2001 71 57.0001 70.6C53.0001 70.1 48.9001 69.1 45.9001 66.4C43.3001 64.1 42.0001 60.6 42.1001 57.2C42.1001 56.6 42.7001 56.2 43.3001 56.3C44.9001 56.3 46.5001 56.3 48.0001 56.3C48.6001 56.3 49.1001 56.8 49.1001 57.4C49.4001 59.3 50.1001 61.3 51.8001 62.5C55.0001 64.6 59.1001 64.4 62.7001 64.5C65.8001 64.4 69.2001 64.3 71.7001 62.3C73.0001 61.1 73.4001 59.2 73.0001 57.6C72.6001 56.2 71.2001 55.6 69.9001 55.1C63.5001 53.1 56.5001 53.8 50.1001 51.5C47.5001 50.6 45.0001 48.9 44.0001 46.2C42.6001 42.4 43.2001 37.8 46.2001 34.9C49.1001 31.9 53.2001 30.8 57.1001 30.4Z"
+						fill="#A8A8A8"></path>
 				</g>
 			</svg>
 		</div>
@@ -135,9 +135,9 @@ import PageLayout from "@layouts/PageLayout.astro";
 
 	<div class="mt-4 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
 		<div
-			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 hover:bg-neutral-500/20 hover:font-iaWriterMonoBold"
+			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10"
 		>
-			<span>Typescript</span>
+			<span>Java</span>
 			<svg
 				width="30"
 				height="30"
@@ -145,83 +145,39 @@ import PageLayout from "@layouts/PageLayout.astro";
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<g id="typescript" clip-path="url(#clip0_790_10643)">
-					<path id="Vector" d="M0 0H100V100H0V0Z" fill="#5F5F5F"></path>
-					<path
-						id="Vector_2"
-						d="M48 37.0001H52.8V45.3001H39.8V82.1001L39.5 82.2001C39 82.3001 32.9 82.3001 31.5 82.2001L30.4 82.1001V45.3001H17.4V37.0001H21.5C23.7 37.0001 29.5 37.0001 34.3 37.0001C39.3 37.0001 45.4 37.0001 48 37.0001ZM84.6 78.3001C82.7 80.3001 80.6 81.4001 77.2 82.4001C75.7 82.8001 75.5 82.8001 72.1 82.8001C68.8 82.8001 68.5 82.8001 66.9 82.4001C62.7 81.3001 59.3 79.2001 57 76.2001C56.3 75.4001 55.3 73.6001 55.3 73.4001C55.3 73.3001 55.5 73.2001 55.7 73.1001C55.9 73.0001 56.3 72.7001 56.7 72.5001C57 72.3001 57.7 71.9001 58.1 71.7001C58.5 71.5001 59.7 70.8001 60.8 70.1001C61.9 69.5001 62.8 68.9001 62.9 68.9001C63 68.9001 63.2 69.1001 63.4 69.4001C64.3 71.0001 66.5 73.0001 68.1 73.7001C69.1 74.1001 71.2 74.6001 72.2 74.6001C73.1 74.6001 74.9 74.2001 75.8 73.8001C76.8 73.3001 77.3 72.9001 77.9 72.0001C78.3 71.4001 78.4 71.2001 78.3 70.0001C78.3 68.9001 78.2 68.6001 77.9 68.0001C77 66.6001 75.8 65.8001 71 63.7001C66 61.5001 63.8 60.2001 62 58.4001C60.7 57.1001 60.4 56.7001 59.5 55.1001C58.4 53.0001 58.3 52.3001 58.3 49.2001C58.3 47.0001 58.3 46.3001 58.6 45.5001C58.9 44.4001 60 42.2001 60.5 41.7001C61.5 40.5001 61.9 40.2001 62.6 39.6001C64.7 37.8001 68 36.7001 71.2 36.6001C71.6 36.6001 72.7 36.7001 73.9 36.7001C77.1 37.0001 79.3 37.7001 81.4 39.4001C83 40.6001 85.4 43.6001 85.1 44.0001C84.9 44.2001 78.7 48.4001 78.3 48.5001C78.1 48.6001 77.9 48.5001 77.5 48.1001C75.4 45.6001 74.5 45.0001 72.5 44.9001C71 44.8001 70.3 45.0001 69.3 45.6001C68.3 46.3001 67.8 47.3001 67.8 48.8001C67.8 50.9001 68.6 51.9001 71.6 53.4001C73.5 54.4001 75.2 55.1001 75.3 55.1001C75.5 55.1001 79.5 57.1001 80.5 57.7001C85.4 60.6001 87.4 63.5001 87.9 68.6001C88 72.3001 87 75.8001 84.6 78.3001Z"
-						fill="white"></path>
-				</g>
-				<defs>
-					<clipPath id="clip0_790_10643">
-						<rect width="100" height="100" fill="white"></rect>
-					</clipPath>
-				</defs>
-			</svg>
-		</div>
-		<div
-			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 hover:bg-neutral-500/20 hover:font-iaWriterMonoBold"
-		>
-			<span>Javascript</span>
-			<svg
-				width="30"
-				height="30"
-				viewBox="0 0 100 100"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<g id="js" clip-path="url(#clip0_790_8266)">
-					<path id="Vector" d="M100 0H0V100H100V0Z" fill="#D1D1D1"></path>
-					<path
-						id="Vector_2"
-						d="M67.2 78.0999C69.2 81.3999 71.8 83.7999 76.5 83.7999C80.4 83.7999 82.9 81.8999 82.9 79.1999C82.9 75.9999 80.3 74.7999 76.1 72.9999L73.8 71.9999C67 69.0999 62.5 65.4999 62.5 57.7999C62.5 50.7999 67.9 45.3999 76.3 45.3999C82.3 45.3999 86.6 47.4999 89.7 52.8999L82.4 57.5999C80.8 54.6999 79.1 53.5999 76.4 53.5999C73.6 53.5999 71.9 55.2999 71.9 57.5999C71.9 60.3999 73.6 61.5999 77.7 63.2999L80 64.2999C88 67.6999 92.5 71.1999 92.5 79.0999C92.5 87.5999 85.9 92.1999 76.9 92.1999C68.2 92.1999 62.5 87.9999 59.8 82.5999L67.2 78.0999ZM34 78.8999C35.5 81.4999 36.8 83.6999 40 83.6999C43.1 83.6999 45 82.4999 45 77.7999V45.7999H54.4V77.9999C54.4 87.6999 48.7 92.1999 40.4 92.1999C32.9 92.1999 28.5 88.2999 26.3 83.5999L34 78.8999Z"
-						fill="black"></path>
-				</g>
-				<defs>
-					<clipPath id="clip0_790_8266">
-						<rect width="100" height="100" fill="white"></rect>
-					</clipPath>
-				</defs>
-			</svg>
-		</div>
-		<div
-			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 hover:bg-neutral-500/20 hover:font-iaWriterMonoBold sm:col-start-3"
-		>
-			<span>React</span>
-			<svg
-				width="30"
-				height="30"
-				viewBox="0 0 101 100"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<g id="reactjs">
+				<g id="java" clip-path="url(#clip0_790_8248)">
 					<path
 						id="Vector"
-						d="M50.3 58.7999C55.2 58.7999 59.1 54.9 59.1 50C59.1 45.1 55.2 41.2 50.3 41.2C45.4 41.2 41.5 45.1 41.5 50C41.5 54.9 45.4 58.7999 50.3 58.7999Z"
-						fill="#B9B9B9"></path>
+						d="M36.8001 77.2999C36.8001 77.2999 33.0001 79.4999 39.5001 80.2999C47.4001 81.1999 51.5001 81.0999 60.2001 79.3999C60.2001 79.3999 62.5001 80.7999 65.7001 82.0999C46.1001 90.4999 21.4001 81.5999 36.8001 77.2999ZM34.4001 66.3999C34.4001 66.3999 30.1001 69.5999 36.7001 70.1999C45.2001 71.0999 51.8001 71.0999 63.4001 68.8999C63.4001 68.8999 65.0001 70.4999 67.5001 71.3999C43.8001 78.3999 17.4001 71.9999 34.4001 66.3999Z"
+						fill="#777777"></path>
 					<path
 						id="Vector_2"
-						d="M50.3 68.0999C76.4 68.0999 97.6 59.9999 97.6 49.9999C97.6 39.9999 76.4 31.8999 50.3 31.8999C24.2 31.8999 3 39.9999 3 49.9999C3 59.9999 24.2 68.0999 50.3 68.0999Z"
-						stroke="#B9B9B9"
-						stroke-width="5"></path>
+						d="M54.5001 47.7999C59.3001 53.3999 53.2001 58.3999 53.2001 58.3999C53.2001 58.3999 65.4001 52.0999 59.8001 44.1999C54.5001 36.7999 50.5001 33.0999 72.3001 20.4999C72.4001 20.3999 38.2001 28.9999 54.5001 47.7999Z"
+						fill="#878787"></path>
 					<path
 						id="Vector_3"
-						d="M34.7 59C47.7 81.7 65.3 96 74 91C82.6 86 79.1 63.6 66 41C52.9 18.3 35.3 4.00002 26.7 9.00002C18 14 21.6 36.4 34.7 59Z"
-						stroke="#B9B9B9"
-						stroke-width="5"></path>
+						d="M80.4 85.3999C80.4 85.3999 83.2 87.6999 77.3 89.4999C66 92.8999 30.3 93.9999 20.3 89.5999C16.7 87.9999 23.4 85.8999 25.5 85.3999C27.7 84.8999 28.9 84.9999 28.9 84.9999C24.9 82.1999 3.29999 90.4999 17.9 92.8999C57.9 99.4999 90.8 90.0999 80.4 85.3999ZM38.6 54.9999C38.6 54.9999 20.4 59.2999 32.2 60.8999C37.2 61.5999 47 61.3999 56.2 60.5999C63.7 59.9999 71.3 58.5999 71.3 58.5999C71.3 58.5999 68.6 59.6999 66.7 60.9999C48.2 65.8999 12.6 63.5999 22.9 58.5999C31.5 54.5999 38.6 54.9999 38.6 54.9999ZM71.2 73.2999C90 63.5999 81.3 54.1999 75.2 55.3999C73.7 55.6999 73.1 55.9999 73.1 55.9999C73.1 55.9999 73.7 55.0999 74.7 54.7999C86.7 50.5999 95.9 67.1999 70.8 73.7999C70.8 73.7999 71.1 73.4999 71.2 73.2999Z"
+						fill="#777777"></path>
 					<path
 						id="Vector_4"
-						d="M34.7 41C21.6 63.6 18.1 86 26.7 91C35.3 96 52.9 81.7 65.9 59C79 36.4 82.6 14 74 9.00002C65.3 4.00002 47.7 18.3 34.7 41Z"
-						stroke="#B9B9B9"
-						stroke-width="5"></path>
+						d="M59.9 0C59.9 0 70.3 10.4 50 26.4C33.8 39.2 46.3 46.5 50 54.9C40.5 46.4 33.6 38.8 38.2 31.8C45.1 21.5 64.1 16.5 59.9 0Z"
+						fill="#878787"></path>
+					<path
+						id="Vector_5"
+						d="M40.4 99.7C58.4 100.9 86.0999 99.1 86.6999 90.5C86.6999 90.5 85.4 93.7 71.8 96.3C56.4 99.2 37.5 98.9 26.2 97C26.3 97 28.6 98.9 40.4 99.7Z"
+						fill="#777777"></path>
 				</g>
+				<defs>
+					<clipPath id="clip0_790_8248">
+						<rect width="100" height="100" fill="white"></rect>
+					</clipPath>
+				</defs>
 			</svg>
 		</div>
 		<div
-			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 hover:bg-neutral-500/20 hover:font-iaWriterMonoBold sm:col-start-4"
+			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10"
 		>
-			<span>Astro</span>
+			<span>Spring Boot</span>
 			<svg
 				width="30"
 				height="30"
@@ -229,17 +185,100 @@ import PageLayout from "@layouts/PageLayout.astro";
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<g id="astro">
+				<g id="spring" clip-path="url(#clip0_790_10578)">
 					<path
 						id="Vector"
-						d="M35.7 85.2001C31.2 81.1001 29.9 72.4001 31.8 66.1001C35.1 70.1001 39.6 71.3001 44.2 72.0001C51.4 73.1001 58.5 72.7001 65.2 69.4001C66 69.0001 66.7 68.5001 67.5 68.0001C68.1 69.8001 68.3 71.7001 68.1 73.6001C67.6 78.2001 65.3 81.7001 61.7 84.4001C60.3 85.5001 58.7 86.4001 57.2 87.4001C52.6 90.5001 51.4 94.1001 53.1 99.4001C53.1 99.5001 53.2 99.7001 53.3 100C51 98.9001 49.3 97.4001 48 95.4001C46.6 93.3001 46 90.9001 45.9 88.4001C45.9 87.2001 45.9 85.9001 45.7 84.7001C45.3 81.7001 43.9 80.4001 41.3 80.3001C38.6 80.2001 36.5 81.9001 35.9 84.5001C35.8 84.7001 35.8 84.9001 35.7 85.2001Z"
-						fill="#838383"></path>
+						d="M91.1 5.7C89.7 9.2 87.8 12.3 85.7 15.1C76.6 5.9 64 0 50 0C22.5 0 0 22.3 0 49.9C0 64.3 6.2 77.3 16 86.5L17.9 88.2C26.5 95.5 37.8 99.9 50 99.9C76.3 99.9 97.9 79.4 99.7 53.6C101.2 41 97.4 24.9 91.1 5.7ZM23.2 86.9C21.8 88.8 19.1 89 17.2 87.5C15.3 86.1 15.1 83.4 16.6 81.5C18 79.6 20.7 79.4 22.6 80.9C24.3 82.4 24.6 85.1 23.2 86.9ZM90.8 72C78.5 88.4 52.1 82.8 35.3 83.6C35.3 83.6 32.3 83.8 29.3 84.2C29.3 84.2 30.4 83.7 31.9 83.2C43.7 79.1 49.3 78.2 56.5 74.6C70 67.7 83.5 52.6 86.2 36.9C81 51.9 65.4 64.9 51.2 70.2C41.4 73.8 23.8 77.3 23.8 77.3L23.1 76.9C11.2 70.9 10.8 45 32.6 36.6C42.2 32.9 51.3 34.9 61.7 32.5C72.7 29.9 85.5 21.7 90.6 10.9C96.3 28.3 103.3 55.3 90.8 72Z"
+						fill="#909090"></path>
 					<path
 						id="Vector_2"
-						d="M10 65C10 65 23.3 58.5 36.7 58.5L46.8 27.2C47.2 25.7 48.3 24.7 49.5 24.7C50.7 24.7 51.8 25.7 52.2 27.2L62.3 58.5C78.1 58.5 89 65 89 65C89 65 66.4 3.1 66.3 3C65.7 1.2 64.6 0 63.1 0H35.9C34.4 0 33.4 1.2 32.7 3C32.6 3.1 10 65 10 65Z"
-						fill="#020202"></path>
+						d="M23.1999 86.9001C21.7999 88.8001 19.0999 89.0001 17.1999 87.5001C15.2999 86.1001 15.0999 83.4001 16.5999 81.5001C17.9999 79.6001 20.6999 79.4001 22.5999 80.9001C24.2999 82.4001 24.5999 85.1001 23.1999 86.9001Z"
+						fill="#909090"></path>
+				</g>
+				<defs>
+					<clipPath id="clip0_790_10578">
+						<rect width="100" height="100" fill="white"></rect>
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+		<div
+			class="col-start-1 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10 sm:col-start-3"
+		>
+			<span>Python</span>
+			<svg
+				width="30"
+				height="30"
+				viewBox="0 0 100 100"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g id="python" clip-path="url(#clip0_790_10402)">
+					<path
+						id="Vector"
+						d="M49.6 0C24.3 0 25.8 11 25.8 11V22.4H50V25.8H16.2C16.2 25.8 0 24 0 49.6C0 75.2 14.2 74.3 14.2 74.3H22.7V62.4C22.7 62.4 22.2 48.2 36.7 48.2H60.7C60.7 48.2 74.2 48.4 74.2 35.2V13.3C74.1 13.3 76.2 0 49.6 0ZM36.3 7.7C36.9 7.7 37.4 7.8 38 8C38.5 8.2 39 8.5 39.4 8.9C39.8 9.3 40.1 9.8 40.3 10.3C40.5 10.8 40.6 11.4 40.6 12C40.6 12.6 40.5 13.1 40.3 13.7C40.1 14.2 39.8 14.7 39.4 15.1C39 15.5 38.5 15.8 38 16C37.5 16.2 36.9 16.3 36.3 16.3C35.7 16.3 35.2 16.2 34.6 16C34 15.8 33.6 15.5 33.2 15.1C32.8 14.7 32.5 14.2 32.3 13.7C32.1 13.2 32 12.6 32 12C32 11.4 32.1 10.9 32.3 10.3C32.5 9.8 32.8 9.3 33.2 8.9C33.6 8.5 34.1 8.2 34.6 8C35.1 7.8 35.7 7.7 36.3 7.7Z"
+						fill="url(#paint0_linear_790_10402)"></path>
+					<path
+						id="Vector_2"
+						d="M50.4 99.4999C75.8 99.4999 74.1999 88.4999 74.1999 88.4999V77.0999H49.9V73.6999H83.6999C83.6999 73.6999 99.8999 75.4999 99.8999 49.8999C99.8999 24.2999 85.6999 25.1999 85.6999 25.1999H77.1999V36.9999C77.1999 36.9999 77.7 51.1999 63.2 51.1999H39.2C39.2 51.1999 25.7 50.9999 25.7 64.1999V86.0999C25.9 86.1999 23.8 99.4999 50.4 99.4999ZM63.7 91.7999C63.1 91.7999 62.6 91.6999 62 91.4999C61.5 91.2999 60.9999 90.9999 60.5999 90.5999C60.1999 90.1999 59.9 89.6999 59.7 89.1999C59.5 88.6999 59.4 88.0999 59.4 87.4999C59.4 86.8999 59.5 86.3999 59.7 85.7999C59.9 85.2999 60.1999 84.7999 60.5999 84.3999C60.9999 83.9999 61.5 83.6999 62 83.4999C62.5 83.2999 63.1 83.1999 63.7 83.1999C64.3 83.1999 64.8 83.2999 65.4 83.4999C65.9 83.6999 66.4 83.9999 66.8 84.3999C67.2 84.7999 67.4999 85.2999 67.6999 85.7999C67.8999 86.2999 68 86.8999 68 87.4999C68 88.0999 67.8999 88.5999 67.6999 89.1999C67.4999 89.6999 67.2 90.1999 66.8 90.5999C66.4 90.9999 65.9 91.2999 65.4 91.4999C64.9 91.6999 64.3 91.7999 63.7 91.7999Z"
+						fill="url(#paint1_linear_790_10402)"></path>
+				</g>
+				<defs>
+					<linearGradient
+						id="paint0_linear_790_10402"
+						x1="9.3078"
+						y1="9.2533"
+						x2="58.8647"
+						y2="58.3159"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#6F6F6F"></stop>
+						<stop offset="1" stop-color="#5E5E5E"></stop>
+					</linearGradient>
+					<linearGradient
+						id="paint1_linear_790_10402"
+						x1="39.7455"
+						y1="40.7521"
+						x2="92.964"
+						y2="91.0612"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#DADADA"></stop>
+						<stop offset="1" stop-color="#C5C5C5"></stop>
+					</linearGradient>
+					<clipPath id="clip0_790_10402">
+						<rect width="100" height="100" fill="white"></rect>
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+		<div
+			class="col-start-2 flex items-center justify-center space-x-2 rounded-lg bg-neutral-500/10 p-4 dark:bg-neutral-300/10 sm:col-start-4"
+		>
+			<span>PL/SQL</span>
+			<svg
+				width="30"
+				height="30"
+				viewBox="0 0 100 100"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g id="oracle">
+					<path
+						id="Vector"
+						d="M31.5 81.1C14 81.1 0 67 0 49.5C0 32 14 18 31.5 18H68.4C86 18 100 32 100 49.5C100 67 86 81.1 68.5 81.1H31.5ZM67.5 69.9C79 69.9 87.9 60.7 87.9 49.5C87.9 38 78.7 29.1 67.5 29.1H32.5C21 29.1 12.1 38.3 12.1 49.5C12.1 60.7 21.3 69.9 32.5 69.9H67.5Z"
+						fill="#6B6B6B"></path>
 				</g>
 			</svg>
 		</div>
 	</div>
+
+	<h2 class="mt-8">Portfolio & Projects</h2>
+	<PortfolioEntry
+		url="http://atherton-arboriculture.co.uk"
+		imagePath="/images/atherton.png"
+		title="Atherton arboriculture"
+		description="A small arboriculture business based around Leyland, Preston and Lancashire."
+		tags={["HTML", "CSS"]}
+	/>
 </PageLayout>

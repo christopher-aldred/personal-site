@@ -1,0 +1,28 @@
+---
+const { url, imagePath, title, description, tags } = Astro.props;
+---
+
+<div
+	class="mt-4 flex w-full flex-col items-center justify-center rounded-lg border p-4 sm:flex-row sm:items-start"
+>
+	<img
+		src={imagePath}
+		alt="portfolio entry snapshot"
+		class="mb-4 h-32 w-32 rounded-full object-cover sm:mb-0 sm:mr-4"
+		style="align-self: center;"
+	/>
+
+	<div class="m-auto h-full text-center sm:text-left">
+		<h3><a href={url}>{title}</a></h3>
+		<p class="mb-0">{description}</p>
+		<span class="mt-2 flex justify-center sm:justify-start">
+			{
+				tags.map((tag) => (
+					<div class="mr-2 w-min rounded-full bg-neutral-500/10 px-2 dark:bg-neutral-300/10">
+						{tag}
+					</div>
+				))
+			}
+		</span>
+	</div>
+</div>

@@ -12,12 +12,6 @@ const currentPath = pathname.slice(1);
 		class={`whitespace-nowrap ${currentPath === "" ? "font-iaWriterMonoBold underline" : ""}`}
 		href="/">home</a
 	>
-	<a
-		class={`whitespace-nowrap ${
-			currentPath.includes("post") ? "font-iaWriterMonoBold underline" : ""
-		}`}
-		href="/posts/1">posts</a
-	>
 	{
 		pages.map(({ file }) => {
 			const urlWorkaround = file.split("/").pop()?.split(".")[0];
@@ -33,4 +27,11 @@ const currentPath = pathname.slice(1);
 			);
 		})
 	}
+
+	<a
+		class={`whitespace-nowrap ${
+			currentPath.includes("post") ? "font-iaWriterMonoBold underline" : ""
+		}`}
+		href="/posts/1">news</a
+	>
 </nav>
