@@ -26,7 +26,7 @@ const currentPath = pathname.slice(1);
 					class={`whitespace-nowrap ${
 						currentPath.includes(urlWorkaround!) ? "font-iaWriterMonoBold underline" : ""
 					}`}
-					href={`/page/${file.split("/").pop()?.split(".")[0]}`}
+					href={`/page/${urlWorkaround}`}
 				>
 					{urlWorkaround}
 				</a>
