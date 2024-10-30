@@ -1,5 +1,5 @@
 ---
-title: services
+title: contact
 ---
 
 <h2>Contact details</h2>
