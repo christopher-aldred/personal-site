@@ -14,7 +14,7 @@ const currentPath = pathname.slice(1);
 	>
 	<a
 		class={`whitespace-nowrap ${
-			currentPath === "contact" ? "font-iaWriterMonoBold underline" : ""
+			currentPath.includes("contact") ? "font-iaWriterMonoBold underline" : ""
 		}`}
 		href="/contact">contact</a
 	>
