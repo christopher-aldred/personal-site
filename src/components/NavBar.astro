@@ -12,6 +12,12 @@ const currentPath = pathname.slice(1);
 		class={`whitespace-nowrap ${currentPath === "" ? "font-iaWriterMonoBold underline" : ""}`}
 		href="/">home</a
 	>
+	<a
+		class={`whitespace-nowrap ${
+			currentPath === "contact" ? "font-iaWriterMonoBold underline" : ""
+		}`}
+		href="/contact">contact</a
+	>
 	{
 		pages.map(({ file }) => {
 			const urlWorkaround = file.split("/").pop()?.split(".")[0];
