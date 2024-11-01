@@ -1,13 +1,14 @@
 ---
 title: services
 ---
+
 ## Services I offer
 
-* Website design
-* Website hosting
-* Website maintenance
-* Custom forms and 
-* Domain name registration
-* Branded email setup
-* IT support
-* AI chatbot integration
+- Website design
+- Website hosting
+- Website maintenance
+- Domain name registration
+- Form submissions and mailing lists
+- Branded email setup
+- IT support
+- AI chatbot integration
