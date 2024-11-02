@@ -14,7 +14,6 @@
 		"sync": "astro sync"
 	},
 	"dependencies": {
-		"@astrojs/netlify": "^5.5.4",
 		"astro": "^4.0.3",
 		"sharp": "^0.33.5",
 		"tech-stack-icons": "^2.1.0"
